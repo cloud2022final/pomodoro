@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-$f1rf1_n#e$cm3l$0i!f)+87^cof_^@f%!_glxe)kk$*0g^e)&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [pomodoro2022cloud.herokuapp.com]
+ALLOWED_HOSTS = ['pomodoro2022cloud.herokuapp.com']
 
 
 # Application definition
