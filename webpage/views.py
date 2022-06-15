@@ -13,3 +13,6 @@ def test(request):
     }
 
     return render(request, "test.html", context=context)
+
+def room(request):
+	return render(request, "room.html")
