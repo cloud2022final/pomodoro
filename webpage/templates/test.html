@@ -1,28 +1,26 @@
-<!doctype html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-TCE0JRTDLZ"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-TCE0JRTDLZ")</script><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet"><link rel="apple-touch-icon" href="/img/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>CC-Final</title><link href="/static/css/main.78aa2bf1.chunk.css" rel="stylesheet"></head><body><p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p></body><form action="http://localhost:8000/"><button type="submit">To home</button></form><a href="http://localhost:8000/"><input type="button" value="click here"></a>
-	<form action="http://localhost:8000/room">
-        <input
-            class="form__display-name"
-            type="text"
-            placeholder="Display Name"
-            name="username"
-            required
-        />
-        <input
-            class="form__room"
-            type="text"
-            name="room"
-            placeholder="Room Name"
-            required
-        />
-        <button type="submit" class="form__join primary-gradient">
-            Join or Create Room
-        </button>
-    </form>
-    <script type="text/javascript">
-    	/*if ((room = RoomData.objects.filter(rootname__iexact='test1') === []) {
-    		room = RoomData(roomname="test1", minutes=25, seconds=0, message="HI");
-    	}
-    	room = RoomData.objects.filter(rootname__iexact='test1');
-    	console.log(room);*/
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" >
+        <!-- Custom CSS -->
+        <link href="../static/css/login.css" rel="stylesheet">
+    
+        <title>To enjoy your focused time</title>
+    </head>
+    <body>
+        <form action="http://127.0.0.1:8000/?" class="form">
+            <label for="inputRoom" style="width: 100%;">
+            <input id="inputRoom" class="form-control" placeholder="Room name" required style="padding: 3%; margin-top: 3%; margin-bottom: 1%;">
+            <label for="inputName" style="width: 100%;">
+            <input id="inputName" class="form-control" placeholder="User name" required style="padding: 3%; margin-top: 3%; margin-bottom: 2.5%;">
+            <button type="submit" class="btn btn-lg btn-light btn-block" id="btnLogin">Enter room</button>
+        </form>
+    </body>
+>>>>>>> f5c140c7f1a7a52ec2343c484a42c245e48bf4e0
 </html>

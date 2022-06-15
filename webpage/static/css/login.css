@@ -1,0 +1,33 @@
+html, body {height: 100%;}
+
+body {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #F7F7F7F7 -60%, #11131b 60%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form {
+    width: 100%;
+	padding: 50px;
+	border: 6px solid #F7F7F7F7;
+	border-radius: 6px;
+    max-width: 350px;
+    transition: transform 250ms;
+}
+
+.form:hover {
+	transform: translateY(-10px);
+}
+
+.btn {
+    transition: transform 250ms;
+    margin-top: 4%;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
