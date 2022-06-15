@@ -25,5 +25,5 @@ urlpatterns = [
     path("", webpage.views.index, name="index"),
     path("webpage/", webpage.views.index, name="index"),
     path("test/", webpage.views.test, name="test"),
-    path("room", webpage.views.room, name="room"),
+    path("room/", webpage.views.room, name="room"),
 ]

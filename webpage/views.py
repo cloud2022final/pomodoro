@@ -16,13 +16,13 @@ def test(request):
     return render(request, "test.html", context=context)
 
 def room(request):
-	# roomdata = RoomData.objects.filter(roomname__iexact='test1')
-	# if (roomdata == []):
+	# get room's name from form in index.html
 	roomstr = request.GET.get('room')
-	if not RoomData.objects.filter(roomname__iexact='test1'):
-		roomdata = RoomData(roomname="test1", minutes=25, seconds=0, message="HI")
+	if not RoomData.objects.filter(roomname__iexact=roomstr):
+		# set default values of room
+		roomdata = RoomData(roomname=roomstr, minutes=25, seconds=0, message="HI")
 		roomdata.save()
-	roomdata = RoomData.objects.filter(roomname__iexact='test1')
+	roomdata = RoomData.objects.filter(roomname__iexact=roomstr)
 	test_text = "hello"
 
 	return render(request, "room.html", locals())
