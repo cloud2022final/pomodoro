@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from webpage.models import RoomData
 
 # Create your views here.
 
@@ -15,4 +16,12 @@ def test(request):
     return render(request, "test.html", context=context)
 
 def room(request):
-	return render(request, "room.html")
+	# roomdata = RoomData.objects.filter(roomname__iexact='test1')
+	# if (roomdata == []):
+	if not RoomData.objects.filter(roomname__iexact='test1'):
+		roomdata = RoomData(roomname="test1", minutes=25, seconds=0, message="HI")
+		roomdata.save()
+	roomdata = RoomData.objects.filter(roomname__iexact='test1')
+	test_text = "hello"
+
+	return render(request, "room.html", locals())

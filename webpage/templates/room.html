@@ -2,6 +2,11 @@
     
     <p>username: </p><p id="username"></p>
     <p>room: </p><p id="room"></p>
+    <p>{{test_text}}</p>
+    <p>{{roomdata}}</p>
+    {% for d in roomdata %}
+    <p>{{d.message}}</p>
+    {% endfor %}
 
     <script type="text/javascript">
         var searchURL = window.location.search;
