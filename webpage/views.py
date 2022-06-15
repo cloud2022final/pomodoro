@@ -18,6 +18,7 @@ def test(request):
 def room(request):
 	# roomdata = RoomData.objects.filter(roomname__iexact='test1')
 	# if (roomdata == []):
+	roomstr = request.GET.get('room')
 	if not RoomData.objects.filter(roomname__iexact='test1'):
 		roomdata = RoomData(roomname="test1", minutes=25, seconds=0, message="HI")
 		roomdata.save()

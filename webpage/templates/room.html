@@ -2,6 +2,7 @@
     
     <p>username: </p><p id="username"></p>
     <p>room: </p><p id="room"></p>
+    <p>roomstr: </p><p>{{roomstr}}</p>
     <p>{{test_text}}</p>
     <p>{{roomdata}}</p>
     {% for d in roomdata %}
@@ -12,8 +13,8 @@
         var searchURL = window.location.search;
         searchURL = searchURL.substring(1, searchURL.length);
         var username = searchURL.split("&")[0].split("=")[1];
-        document.getElementById("username").innerHTML = username;
+        document.getElementById("room").innerHTML = username;
         var room = searchURL.split("&")[1].split("=")[1];
-        document.getElementById("room").innerHTML = room;
+        document.getElementById("username").innerHTML = room;
     </script>
 </html>
