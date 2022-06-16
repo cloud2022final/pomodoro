@@ -26,3 +26,14 @@ def room(request):
 	test_text = "hello"
 
 	return render(request, "room.html", locals())
+
+def access(request, roomstr, username):
+	roomdata = RoomData.objects.filter(roomname__iexact=roomstr)
+	
+	if roomdata[0].pause:
+		roomdata[0].minutes = roomdata[0].minutes - 1
+	m = roomdata[0].minutes
+	roomdata[0].save()
+
+	#return (request, locals())
+	return render(request, "room.html", locals())

@@ -51,4 +51,26 @@
             <button type="submit" class="btn btn-lg btn-light btn-block" id="btnLogin">Enter room</button>
         </form>
     </body>
+    <!-- <p style="color:black" id="m">m: {{m}}</p>
+    <script type="text/javascript">
+        httpRequest = new XMLHttpRequest();
+        var searchURL = window.location.search;
+        searchURL = searchURL.substring(1, searchURL.length);
+        var username = searchURL.split("&")[1].split("=")[1];
+        // document.getElementById("room").innerHTML = username;
+        var room = searchURL.split("&")[0].split("=")[1];
+        // document.getElementById("username").innerHTML = room;
+        var addr = 'http://localhost:8000/room/' + room + '/' + username;
+        // console.log(addr);
+        // httpRequest.open('GET', addr, true);
+        // httpRequest.send();
+        setInterval(function () {
+            // console.log(addr);
+            httpRequest.open('GET', addr, true);
+            httpRequest.send();
+            console.log(httpRequest.responseText);
+            console.log("http");
+        }, 1000);
+    </script>
+	-->
 </html>
